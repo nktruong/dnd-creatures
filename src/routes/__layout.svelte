@@ -1,5 +1,7 @@
 <script>
-  import "../app.css";
+  import '../app.css'
 </script>
 
-<slot />
+<div class="mx-auto grid max-w-6xl grid-cols-2 gap-y-16 py-16">
+  <slot />
+</div>
