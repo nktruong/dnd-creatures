@@ -1,4 +1,11 @@
-<section class="text-center">
+<script>
+  // 1. on click ->  program fetches DND 5e API
+  // 2. program chooses a random # -> accesses a creature's object
+  // 3. with creature index -> fetches again to find info
+  // 4. use formatting to display contentß
+</script>
+
+<main class="text-center">
   <header>
     <h1 class="font-fell text-6xl font-semibold">
       Welcome to the Creatures of DND
@@ -10,15 +17,11 @@
       to roam the lands of your world?
     </p>
     <p class="py-6 text-xl italic">Then let the dice decide for you.</p>
-    <button
-      type="button"
-      class="rounded-md bg-slate-700 py-1 px-4 text-xl text-slate-100"
-      >Roll</button
-    >
+    <button type="button" class="bg-gray-700 text-gray-200 py-1 px-3 rounded-sm text-2xl">Roll</button>
   </section>
-</section>
+</main>
 
 <!-- Houses the content -->
-<section>
-  <p>Where the monsters reside.</p>
+<section> 
+  
 </section>
