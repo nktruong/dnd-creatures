@@ -5,6 +5,7 @@ module.exports = {
       fontFamily: {
         fell: ['IM Fell English SC', 'serif'],
         vollkorn: ['Vollkorn', 'serif'],
+        elite: ['Special Elite', 'cursive']
       }
     },
   },
