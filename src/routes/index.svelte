@@ -34,6 +34,11 @@
   }
 </script>
 
+<svelte:head>
+  <title>DND 5e Creature Adventure</title>
+  <meta name="description" content="Discover new and old creatures lurking in the wilds">
+</svelte:head>
+
 <main class="text-center">
   <header>
     <h1 class="font-fell text-6xl font-semibold">
