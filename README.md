@@ -14,6 +14,7 @@ You can try out the demo here: [Link](https://dnd-monsters-iota.vercel.app)
 ## What I Learned
 * Using async/await with the Fetch API
 * Using the `on:` directive for event listening in Svelte
+* How important adding the site's title and meta description is for SEO
 * Randomizing the results before it is shown
 * That there are 332 monsters in DND 5e and possibly even more
 
