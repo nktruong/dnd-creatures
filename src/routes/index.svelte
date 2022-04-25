@@ -32,7 +32,6 @@
     // when the button is clicked, the getMonster function is set to the promise
     promise = getMonster()
   }
-
 </script>
 
 <main class="text-center">
@@ -41,6 +40,7 @@
       Welcome to the Creatures of DND
     </h1>
   </header>
+
   <section class="pt-12 font-vollkorn">
     <p class="text-xl">
       Having difficulties choosing creatures to polymorph into? Or perhaps, ones
@@ -53,13 +53,14 @@
   </section>
 </main>
 
-<!-- Houses the content -->
-<section>
+<section class="text-center pt-12">
   <!-- await block to switch between waiting/resolved/error -->
   {#await promise}
-    <p>Waiting ...</p>
+    <p class="text-3xl">Waiting ...</p>
   {:then data}
-    <p>{JSON.stringify(data)}</p>
+    {#if data}
+      <p class="text-5xl font-semibold font-elite">{data.name}</p>
+    {/if}
   {:catch error}
     <p class="text-red-600 text-2xl">{error.message}</p>
   {/await}
