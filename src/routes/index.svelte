@@ -49,7 +49,7 @@
     <p class="py-6 text-xl italic">Then let the dice decide for you.</p>
 
     <!-- in Svelte, you can use the on: directive to listen for an event -->
-    <button on:click={ handleClick } type="button" class="bg-gray-700 text-gray-200 py-1 px-3 rounded-sm text-2xl">Roll</button>
+    <button on:click={ handleClick } type="button" class="bg-gray-700 text-gray-200 py-1 px-3 rounded-md text-2xl hover:bg-gray-900">Roll</button>
   </section>
 </main>
 
@@ -59,7 +59,7 @@
     <p class="text-3xl">Waiting ...</p>
   {:then data}
     {#if data}
-      <p class="text-5xl font-semibold font-elite">{data.name}</p>
+      <p class="text-5xl font-semibold font-elite text-transparent bg-clip-text bg-gradient-to-tr from-slate-900 via-orange-600 to-red-600">{data.name}</p>
     {/if}
   {:catch error}
     <p class="text-red-600 text-2xl">{error.message}</p>
