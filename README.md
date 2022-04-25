@@ -1,11 +1,11 @@
-# DND Monsters
+# DND Creatures
 
-A DND 5e app that randomly chooses a DND monster/creature at the click of a button. Uses the [https://www.dnd5eapi.co](https://www.dnd5eapi.co) API.
+A DND 5e app that randomly chooses a DND creature at the click of a button. Uses the [https://www.dnd5eapi.co](https://www.dnd5eapi.co) API.
 ​
 > As a Dungeon Master or a Druid, there are many creatures to choose from. But when time is running out, the possibilities seem endless.
 ​
 
-You can try out the demo here: [Link](https://dnd-monsters-iota.vercel.app)
+You can try out the demo here: [Link](https://dnd-creatures.vercel.app)
 ​
 ## Technologies Used
 * Sveltekit - For server side rendering, and minimal build sizes.
