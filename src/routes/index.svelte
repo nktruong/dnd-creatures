@@ -5,14 +5,17 @@
   // 4. use formatting to display content
 
   let promise = Promise.resolve()
-  const creatureCount = 332
+  const monsterCount = 332
 
   async function getMonster(){
+    // receives random number from 0 - 331
     let randomNum = getRandomInt()
 
+    // waits for the website to return a response
     const response = await fetch("https://www.dnd5eapi.co/api/monsters/")
     const data = await response.json()
 
+    // if successful, then it returns the data. randomNum is used to randomize which monster is chosen
     if (response.ok){
       return data.results[randomNum]
     } else {
@@ -21,10 +24,12 @@
   }
 
   function getRandomInt(){
-    return Math.floor(Math.random() * creatureCount)
+    // rounds down a random # from 0 - 331
+    return Math.floor(Math.random() * monsterCount)
   }
 
   function handleClick(){
+    // when the button is clicked, the getMonster 
     promise = getMonster()
   }
 
