@@ -1,38 +1,23 @@
-# create-svelte
+# DND Monsters
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+A DND 5e app that randomly chooses a DND monster/creature at the click of a button. Uses the [https://www.dnd5eapi.co](https://www.dnd5eapi.co) API.
+​
+> As a Dungeon Master or a Druid, there are many creatures to choose from. But when time is running out, the possibilities seem endless.
+​
 
-## Creating a project
+You can try out the demo here: [Link](https://dnd-monsters-iota.vercel.app)
+​
+## Technologies Used
+* Sveltekit - For server side rendering, and minimal build sizes.
+* Tailwind CSS - For its design system
 
-If you're seeing this, you've probably already done this step. Congrats!
+## What I Learned
+* Using async/await with the Fetch API
+* Using the `on:` directive for event listening in Svelte
+* Randomizing the results before it is shown
+* That there are 332 monsters in DND 5e and possibly even more
 
-```bash
-# create a new project in the current directory
-npm init svelte
+## What I Also Wanted To Do
+To make it more useful, I would want the app to **show additional info of the creatures**. This would require another fetch to be made. While I've done those in the past (complex api repos), this would be my first time with the await operator so I wasn't sure if that would add extra complexity.
 
-# create a new project in my-app
-npm init svelte my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+I also wanted to **add unit tests**. For an app like this, other than ensuring that the API data renders, the rest is straightforward. Being new to the Svelte ecosystem and not fully understanding how Jest works in Svelte, I opted to not dig deeper.
