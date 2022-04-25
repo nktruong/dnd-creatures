@@ -29,7 +29,7 @@
   }
 
   function handleClick(){
-    // when the button is clicked, the getMonster 
+    // when the button is clicked, the getMonster function is set to the promise
     promise = getMonster()
   }
 
@@ -47,12 +47,15 @@
       to roam the lands of your world?
     </p>
     <p class="py-6 text-xl italic">Then let the dice decide for you.</p>
+
+    <!-- in Svelte, you can use the on: directive to listen for an event -->
     <button on:click={ handleClick } type="button" class="bg-gray-700 text-gray-200 py-1 px-3 rounded-sm text-2xl">Roll</button>
   </section>
 </main>
 
 <!-- Houses the content -->
-<section> 
+<section>
+  <!-- await block to switch between waiting/resolved/error -->
   {#await promise}
     <p>Waiting ...</p>
   {:then data}
