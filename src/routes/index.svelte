@@ -5,6 +5,7 @@
   // 4. use formatting to display content
 
   let promise = Promise.resolve()
+  const creatureCount = 332
 
   async function getMonster(){
     let randomNum = getRandomInt()
@@ -20,7 +21,7 @@
   }
 
   function getRandomInt(){
-    return Math.floor(Math.random() * 332)
+    return Math.floor(Math.random() * creatureCount)
   }
 
   function handleClick(){
